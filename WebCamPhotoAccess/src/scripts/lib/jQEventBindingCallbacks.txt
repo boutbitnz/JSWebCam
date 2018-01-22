@@ -1,0 +1,56 @@
+<ul id="something">
+  <li><a id="btnA">Click</a></li>
+  <li><a id="btnB">Click</a></li>
+</ul>
+
+
+$('#something a').on('click', doSomething);
+
+function doSomething(e) {
+
+  switch(e.currentTarget.id) {
+    case 'btnA':
+      $('#thing').hide();
+      $('#other').show();
+      break;
+    case 'btnB':
+      btnBHandler();
+      break;
+    case 'btnC':
+      break;
+    default:
+      alert("What?!");
+  }
+}
+
+// do the above OR the below
+// if you do both, both will execute if you click on #btnB
+
+$('#btnB').on('click', btnBHandler);
+
+function btnBHandler() {
+  // one
+  // two
+  // three
+}
+$('#btnA').on('click', btnAHandler);
+
+function btnAHandler() {
+  // one
+  // two
+  // three
+}
+
+
+function doSomething(e){
+  switch(e.target.id) {
+    case 'btnA':
+      break;
+    case 'btnB':
+      break;
+    case 'btnC':
+      break;
+    default:
+      alert("What?!");
+  }
+}

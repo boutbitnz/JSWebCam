@@ -1,0 +1,25 @@
+body {background-color: transparent; transition: all .2s; -o-transition: all .2s; -moz-transition: all .2s; -webkit-transition: all .2s;}
+
+#snap {border: none; outline: none;}
+#snap:hover {
+/*	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;*/
+}
+
+div#idScanner {display: flex;}
+video#video {width: 64vw; height: 65vh;}
+canvas#canvas {width: 30vw; height: 30vh;}
+video, canvas {object-fit: contain;}
+
+#que,
+#snap {display: inline;}
+#que {}
+#snap {float: right; outline: none; border: none;}
+
+.control {border: 1px solid; display: inline; width: 15vw; height: 5vh;}
+
+.control,
+#video
+#canvas {margin: .5em;}

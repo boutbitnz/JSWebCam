@@ -1,0 +1,18 @@
+http://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/
+
+$ python -m SimpleHTTPServer
+
+http://stackoverflow.com/questions/6084360/using-node-js-as-a-simple-web-server/8427954#8427954
+
+$ http-server
+
+
+CORS
+$ python cors_server.py
+
+you can also drop it anywhere and run it as
+
+$ python /path/to/cors_server.py
+
+
+http://192.168.1.8:8000/app.html 
